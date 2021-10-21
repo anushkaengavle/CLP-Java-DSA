@@ -1,6 +1,5 @@
 /*
-    Print the following pattern in Java
-    
+    Print the following pattern in Java:
     *****
        *
       *
