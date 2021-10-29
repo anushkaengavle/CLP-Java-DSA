@@ -19,17 +19,17 @@ public class PrimeNumber {
             int n = scn.nextInt();
             int count = 0;
 
-            for(int j=1; j<=n; j++){
+            for(int j=2; j*j<=n; j++){
                 if(n % j == 0){
-                    count = count+1;
+                    count++;
                 }
             }
 
-            if(count > 2){
-                System.out.println("Non-Prime");
+            if(count == 0){
+                System.out.println("Prime");
             }
             else{
-                System.out.println("Prime");
+                System.out.println("Non-Prime");
             }
 
         }

@@ -9,5 +9,23 @@ import java.util.*;
   
   public static void main(String[] args) {
       // write your code here
+      Scanner sc = new Scanner(System.in);
+      System.out.println("Enter n");
+      int n = sc.nextInt();
+
+      int a = 0;
+      int b = 1;
+      System.out.println("The series is:");
+      System.out.println(a);
+      System.out.println(b);
+
+      int count = 2;
+      while(count<n){
+          int c = a+b;
+          System.out.println(c);
+          a=b;
+          b=c;
+          count++;
+      }
    }
   }
